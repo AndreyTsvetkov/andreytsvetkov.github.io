@@ -1,0 +1,19 @@
+title: Andrey Tsvetkov
+tagline: High quality software developer
+email: ts.andrey@gmail.com
+description: > 
+  Andrey Tsvetkov, the software developer
+baseurl: "" 
+url: "https://AndreyTsvetkov.github.io/" 
+#twitter_username: jekyllrb
+github_username:  AndreyTsvetkov  
+
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
