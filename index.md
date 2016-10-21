@@ -32,7 +32,7 @@ This library introduces the `Maybe<T>` type (like F-languages Option type), clos
     </tr>
     <tr>
         <td>
-{% highlight csharp %}
+{% highlight C# %}
 if (userId != null) 
 {
     var user = repo.FindById(userId);
@@ -48,7 +48,7 @@ if (userId != null)
 {% endhighlight %}            
         </td>
         <td>
-{% highlight csharp %}
+{% highlight C# %}
 userId.ToMaybe()
     .SelectMany(repo.FindById)
     .Select(user => user.Notify())
