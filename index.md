@@ -25,7 +25,7 @@ In 2016 I started to participate more actively in the open source development. M
 
 This library introduces the `Maybe<T>` type (like F-languages Option type), closely integrated into .net ecosystem, including linq query syntax. Rich extension API allows to write declarative code in many scenarios where previously you needed a tree of if-else statements. 
 
-<table>
+<table class="narrow-figure">
     <tr>
         <td>This code</td>
         <td>becomes this</td>

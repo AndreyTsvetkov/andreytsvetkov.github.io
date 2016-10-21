@@ -2,3 +2,8 @@ img.skill {
 	float: left; 
 	margin: 10px 20px !important;
 }
+
+.narrow-figure figure {
+	margin-right: 10px; 
+	margin-left: 10px;
+}
