@@ -16,10 +16,9 @@ The **TypeScript**'s appearance changed my relationships with the frontend. Now 
 ![](http://www.orangesystem.ru/upload/iblock/df8/df83781a0b82b2f35f080e3664e43b1c/f47802578875ab2ef9e1fa83be680f08.png){:class="skill"}
 And all the traditional stuff, of course - relational databases (MSSQL), queue services (RabbitMQ & others), nosql storages (ElasticSearch & others). 
 
-## My projects
+## Open source projects
 
 In 2016 I started to participate more actively in the open source development. My `Functional.Maybe` library as a nuget package was installed more than 5K times, downloaded about 5 times a day. 
-
 
 #### Functional.Maybe | [github](https://github.com/AndreyTsvetkov/Functional.Maybe) | ![Build status](https://ci.appveyor.com/api/projects/status/8e2bdbu4q60vu2o5?svg=true) | [nuget](https://www.nuget.org/packages/Functional.Maybe/)
 
