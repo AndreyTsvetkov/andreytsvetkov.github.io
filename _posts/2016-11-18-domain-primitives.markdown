@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "domain-primitives"
+caption: "Domain Primitives"
 date:   2016-11-22 11:00:00 +0300
-categories: ddd orm C# dotnet ef entityframework
+categories: ddd csharp value-type
 ---
-# Domain Primitives
 
 I believe the more relevant facts about our Domain Model are directly represented in domain classes, the better. 
 
