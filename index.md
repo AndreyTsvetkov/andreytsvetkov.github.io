@@ -16,6 +16,16 @@ The **TypeScript**'s appearance changed my relationships with the frontend. Now 
 ![](http://www.orangesystem.ru/upload/iblock/df8/df83781a0b82b2f35f080e3664e43b1c/f47802578875ab2ef9e1fa83be680f08.png){:class="skill"}
 And all the traditional stuff, of course - relational databases (MSSQL), queue services (RabbitMQ & others), nosql storages (ElasticSearch & others). 
 
+# Last blog posts
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 # Open source projects
 
 In 2016 I started to participate more actively in the open source development. My `Functional.Maybe` library as a nuget package was installed more than 5K times, downloaded about 5 times a day. 
