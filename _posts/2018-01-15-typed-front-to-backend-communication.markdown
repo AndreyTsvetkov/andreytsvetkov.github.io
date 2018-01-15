@@ -230,16 +230,17 @@ public class Lesson {
 
 // web app: contract
 public class TimeTableLessonView {
-    public static TimeTableLessonView FromDomain(Lesson l) => new TimeTableLessonView(l.Id, ...);
+    public static TimeTableLessonView FromDomain(Lesson l) => 
+      new TimeTableLessonView(l.Id, ...);
 
     // props here
     // ....
 }
 
 // или покороче, в синтаксисе C#8 (как я надеюсь):
-
 public class TimeTableLessonView(Guid id, CourseView course, /*props here */) {
-    public static TimeTableLessonView FromDomain(Lesson l) => new TimeTableLessonView(l.Id, ...);
+    public static TimeTableLessonView FromDomain(Lesson l) => 
+      new TimeTableLessonView(l.Id, ...);
 }
 
 {% endhighlight %}            
