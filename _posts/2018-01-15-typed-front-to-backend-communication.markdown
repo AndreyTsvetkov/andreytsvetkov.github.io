@@ -175,15 +175,13 @@ class Person {
 
 {% highlight TypeScript %}
 interface IPerson {
-
   phone: string | null;
-
 }
 {% endhighlight %}            
 
 ### Шаг 2: прокси для контроллеров - TypeScript уже решил проблему `null`, в отличие от C# - 2
 
-И попытка передать его туда, где требуется строка: 
+И попытка передать `phone` туда, где требуется строка: 
 
 {% highlight TypeScript %}
 const renderTelLink = (phone: string) => (<a href={`tel:${phone}`}>{phone}</a>);
@@ -191,7 +189,7 @@ const renderTelLink = (phone: string) => (<a href={`tel:${phone}`}>{phone}</a>);
 <div>{renderTelLink(user.phone)}</div>
 {% endhighlight %}            
 
-даст ошибку компиляции, мы будем вынуждены не забыть проверить, что телефон правда есть: 
+даст ошибку компиляции, мы будем вынуждены проверить, что телефон правда есть: 
 
 {% highlight TypeScript %}
 {user.phone !== null 
