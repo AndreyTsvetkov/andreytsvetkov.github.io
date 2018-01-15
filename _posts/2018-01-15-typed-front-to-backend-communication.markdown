@@ -214,11 +214,13 @@ const renderTelLink = (phone: string) => (<a href={`tel:${phone}`}>{phone}</a>);
 
 ### Независимость контрактов от доменной модели
 
-Во-первых, сразу надо осознать, что эти объекты не должны выходить даже и за слой сервисов особо, но уже совершенно точно их не нужно передавать на клиент. 
+Во-первых, сразу надо осознать, что эти объекты не должны выходить даже и за слой сервисов, и уж совершенно точно их не нужно передавать на клиент. 
 
 Контракты front-back взаимодействия — дело исключительно Web-слоя вашего приложения, а никак не доменной области. 
 
 ### Независимость контрактов от доменной модели - пример
+
+Поэтому, для контрактов клиента нужны отдельные классы, ровно тех форм и объемов, которые нужны тому или иному клиентскому экрану:
 
 {% highlight C# %}
 // domain class
@@ -227,14 +229,17 @@ public class Lesson {
 }
 
 // web app: contract
-public class LessonView {
-    public static LessonView FromDomain(Lesson l) => new LessonView(l.Id, ...);
+public class TimeTableLessonView {
+    public static TimeTableLessonView FromDomain(Lesson l) => new TimeTableLessonView(l.Id, ...);
 
-    // props
+    // props here
+    // ....
 }
 
-public class LessonView(Guid id, CourseView course, ...) {
-    public static LessonView FromDomain(Lesson l) => new LessonView(l.Id, ...);
+// или покороче, в синтаксисе C#8 (как я надеюсь):
+
+public class TimeTableLessonView(Guid id, CourseView course, /*props here */) {
+    public static TimeTableLessonView FromDomain(Lesson l) => new TimeTableLessonView(l.Id, ...);
 }
 
 {% endhighlight %}            
@@ -245,8 +250,8 @@ public class LessonView(Guid id, CourseView course, ...) {
 
 {% highlight C# %}
 
-public class LessonForReportView(Guid id, AdditionalData data) {
-    public static LessonForReportView FromDomain(Lesson l) => new LessonView(l.Id, ...);
+public class ReportLessonView(Guid id, AdditionalData data) {
+    public static ReportLessonView FromDomain(Lesson l) => new ReportLessonView(l.Id, ...);
 }
 
 {% endhighlight %}            
