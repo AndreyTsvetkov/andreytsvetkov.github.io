@@ -1,9 +1,13 @@
 img.skill {
-	float: left; 
-	margin: 10px 20px !important;
+    float: left;
+    margin: 10px 20px !important;
 }
 
 .narrow-figure figure {
-	margin-right: 0; 
-	margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.project-name a {
+    color: white;
 }
