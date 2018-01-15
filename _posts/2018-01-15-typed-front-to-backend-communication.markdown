@@ -1,4 +1,12 @@
-# Год без JS-errors
+---
+layout: post
+title:  "typed-front-to-backend-communication"
+caption: "Год без JS runtime errors"
+date:   2018-01-15 11:00:00 +0300
+categories: typescript 
+---
+
+# Год без JS runtime errors
 
 ### Получаем клиентский слой взаимодействия с API бесплатно вместе с контролем типов 
 
