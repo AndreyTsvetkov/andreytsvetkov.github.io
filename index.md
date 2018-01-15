@@ -1,21 +1,31 @@
 ---
 layout: page
 ---
-# Creating software. 13 years up to now. 
+# Обо мне
 
-![](http://blog.salihulukoylu.com/wp-content/uploads/2015/10/sql2.fw_-60x60.png){:class="skill"}
-Started from Delphi and C++ Builder, got involved into the **.NET**-development from the times of .NET 1.0 up until now. Since then, **C#** is my old best friend. Tons of code written,  mostly in Visual Studio, from oldschool WinForms and WebForms, WPF and Silverlight to Windows Phone and Windows 10, **ASP.NET MVC** and ASP.NET Core. 
+14 лет в профессии. Анализирую процессы, выявляю проблемы, решаю их с помощью головы и программного обеспечения.
 
-![](http://www.bestrong.org.gr/pictures/xs/xs_4467_l.png){:class="skill"}
-I have everlasting romance with functional languages. Having fun with **F#**, **Scala**, Elm, even some Haskell. But day-to-day functional experience goes from C#, heavily using Linq and other libs like my [Functional.Maybe](https://github.com/AndreyTsvetkov/Functional.Maybe).  
+## Моё дело
+
+Я работаю как независимый консультант по автоматизации и разработчик программного обеспечения. Я анализирую проблемы и задачи моих клиентов, и если они решаются с помощью автоматизации, я предлагаю и реализую программное решение, которое делает организацию лучше, четче и более управляемой. 
+
+У меня есть команда, которая может создавать качественный продукт, я управляю ей как архитектор и тимлид и отвечаю за результаты ее работы.
+
+Такая работа предполагает глубокое погружение в дела клиента, полное доверие и долю от результата. Поэтому я очень тщательно выбираю проекты, и могу себе позволить работать только с теми клиентами, с которыми есть хороший личный контакт, потому что по сути эти отношения имеют тенденцию перерастать в партнерские. 
+
+## История развития
+
+На факультете Кибернетики в МИФИ я получил начальный импульс к изучению программирования в широком спектре технологий, но специализировался дальше на мире .NET, начав работу с ним с момента появления этого стека. Прошел вместе с платформой весь её путь, от C#1.0, включая Windows Forms, WPF & Silverlight, и, прежде всего, ASP.NET от Web Forms до MVC Core, и далее. 
+
+Чтобы не увязнуть в одном мире и одном взгляде, всегда изучал концепции из разных направлений, так познакомился и полюбил функциональное программирование: Haskell, Scala, F#. Сейчас многие аспекты ФП занимают важное место в текущей практике на C#. Популярностью на NUget пользуется моя реализация option type [Functional.Maybe](https://github.com/AndreyTsvetkov/Functional.Maybe)). 
+
+Фронтэнд наконец проснулся и стал давать интересные технологии и подходы. TypeScript открыл путь для качественного программирования на клиенте, React и библиотеки управления состоянием, например MobX, сделали для меня программирование на клиенте не менее красивым и вдохновляющим, как и на сервере.  
+
+По мере накопления опыта становится ясно, что конкретные технологии второстепенны по отношению к подходам и концепциям. Сначала ты в изучении опираешься на выработанные шаблоны (OOP Principles, Patterns), потом интериоризируешь их в своем сознании как принципы (DRY, SOLID), пока они не переходят в область неосознанной компетенции и не становятся частью твоего повседневнего мышления. 
 
 
-![](https://cdn-images-1.medium.com/fit/c/60/60/1*qp4ypiTAjg5aTLwaxvx91w.png){:class="skill"}
-The **TypeScript**'s appearance changed my relationships with the frontend. Now it is another home environment for me. Contemporary frontend technologies are  very inspiring, so through Backbone, Knockout &c I shifted to **React** & MobX, trying to build more concise and modular components.
 
-![](http://www.orangesystem.ru/upload/iblock/df8/df83781a0b82b2f35f080e3664e43b1c/f47802578875ab2ef9e1fa83be680f08.png){:class="skill"}
-And all the traditional stuff, of course - relational databases (MSSQL), queue services (RabbitMQ & others), nosql storages (ElasticSearch & others). 
-
+<!-- 
 # Last blog posts
 
 <ul>
@@ -24,22 +34,21 @@ And all the traditional stuff, of course - relational databases (MSSQL), queue s
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
 
-# Open source projects
+# Open source
 
-In 2016 I started to participate more actively in the open source development. My `Functional.Maybe` library as a nuget package was installed more than 5K times, downloaded about 5 times a day. 
-
----
 
 ## Functional.Maybe | [github](https://github.com/AndreyTsvetkov/Functional.Maybe) | ![Build status](https://ci.appveyor.com/api/projects/status/8e2bdbu4q60vu2o5?svg=true) | [nuget](https://www.nuget.org/packages/Functional.Maybe/)
 
-This library introduces the `Maybe<T>` type (like F-languages Option type), closely integrated into .net ecosystem, including linq query syntax. Rich extension API allows to write declarative code in many scenarios where previously you needed a tree of if-else statements. 
+**20К+** установок. **13** установок в день.
+
+Одна из реализацией типа `Maybe<T>` (Option type из мира ФП), качественно интегрированный с экосистемой .net, включая linq query. Богатый набор методов-расширений позволяет писать декларативный код во мноих сценариях. 
 
 <table class="narrow-figure">
     <tr>
-        <td>This code</td>
-        <td>becomes this</td>
+        <td>Это дерево</td>
+        <td>Превращается в линейную цепочку</td>
     </tr>
     <tr>
         <td>
@@ -70,7 +79,7 @@ userId.ToMaybe()
     </tr>
 </table>
 
-For more samples see [project readme](https://github.com/AndreyTsvetkov/Functional.Maybe/blob/master/Readme.md).
+Примеры см. на [сайте проекта](https://github.com/AndreyTsvetkov/Functional.Maybe/blob/master/Readme.md).
 
 ---
 
