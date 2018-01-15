@@ -85,11 +85,11 @@ userId.ToMaybe()
 
 ## fast-nuget-update | [github](https://github.com/AndreyTsvetkov/fast-nuget-update ) | [![Build status](https://ci.appveyor.com/api/projects/status/ckwopqwiws29cxmn?svg=true)](https://ci.appveyor.com/project/AndreyTS/fast-nuget-update) | [download](https://github.com/AndreyTsvetkov/fast-nuget-update/releases)
 
-Simple tool to bulk update nuget package references for Visual Studio projects (useful for huge solutions). 
+Утилита для обновления версий пакетов в большом решении Visual Studio.
 
-This call updates all the references to Nuget package `MyPackage` to version `1.3.1` in all the `*.csproj` files in the current folder: 
+Вот такой вызов обновляет все версии ссылок на пакет `MyPackage` на версию `1.3.1` во всех `*.csproj` файлах в текущей папке: 
 
     fast-nuget-update --name MyPackage --version 1.3.1
 
-It takes several seconds even on 100 projects, compared to ≈30minutes of Visual Studio.  
+Это занимает несколько секунд на 100 проектах, в сравнении с получасом в Visual Studio.  
 
