@@ -10,4 +10,5 @@ img.skill {
 
 .project-name a {
     color: white;
+    text-decoration: none;
 }
