@@ -2,8 +2,8 @@
 layout: post
 title:  "domain-primitives"
 caption: "Domain Primitives"
-date:   2016-11-22 11:00:00 +0300
-categories: ddd csharp value-type
+date:   2016-11-18 11:00:00 +0300
+categories: ddd value-type strong-typing
 ---
 
 I believe the more relevant facts about our Domain Model are directly represented in domain classes, the better. 

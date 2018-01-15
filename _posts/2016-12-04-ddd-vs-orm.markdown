@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "ddd-vs-orm"
+caption: "DDD vs ORM — can take best from both?"
+date:   2016-11-28 11:00:00 +0300
+categories: ddd 
+---
+
+good new orms support things;
+
+but custom primitives, including `Maybe<T>`, consistent constructors
+
+## point one — nice clear code in the Domain is the must
+total persistence ignorance
+
+## point two — use full the power of EF with creating queries over LINQ and autosyncing DB with Migrations over DTOs
+
+## point three — make them friends with the means of Factories
